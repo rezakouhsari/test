@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+<!--    <script src="test.js"></script>-->
+</head>
+<body>
+
+
+<div class="container">
+
+    <h2>سازنده رمز عبور</h2>
+
+
+    <div class="wrapper">
+        <div class="input_box">
+            <span class="copy_password">کپی</span>
+            <input type="text" disabled>
+        </div>
+        <div class="pass_indicator"></div>
+
+        <div class="pass_length">
+            <div class="details">
+                <label>طول رمز عبور </label>
+                <span>22</span>
+            </div>
+            <input type="range" min="1" max="30" step="1">
+        </div>
+
+
+        <div class="pass_setting">
+            <label class="title">تنظیمات رمز عبور </label>
+
+            <ul class="options">
+                <li class="option">
+                    <input type="checkbox" id="lowercase" checked>
+                    <label for="lowercase">حروف کوچک(a-z) </label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="uppercase" >
+                    <label for="uppercase">حروف بزرگ(A-Z) </label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="numbers" >
+                    <label for="numbers">عدد(0-9) </label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="symbols" >
+                    <label for="symbols">کاراکتر(!@#$%^&*+)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="duplicate" >
+                    <label for="duplicate">تکرار غیر مجاز </label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="spaces" >
+                    <label for="spaces">فضای خالی </label>
+                </li>
+            </ul>
+
+        </div>
+
+        <button class="generate_password">ساخت رمز عبور</button>
+
+    </div>
+
+
+</div>
+
+
+<script src="script.js" type="text/javascript"></script>
+
+</body>
+</html>
